@@ -1,0 +1,10 @@
+header nav.primary .sub-nav { display: none !important; }
+#content .primary .wrap .flexslider { height: 361px !important; overflow: hidden !important; }
+#slider .flex-control-nav li a { font-size: 0px; }
+#slider .flex-pauseplay { bottom: 5px; }
+header nav.primary ul.nav li a { background-image: none !important; }
+#content nav.tertiary ul li a.more { background-image: none !important; }
+#content nav.tertiary ul { margin: 0 !important; padding: 0 !important; }
+#content nav.tertiary ul li a { margin: 0 !important; padding: 10px 20px !important; display: block !important; float: left !important; clear: left; }
+#content .primary .listing-filter h2.open, #content .primary .listing-filter h2 { background-image: none !important; }
+aside img { width: 95%; height: auto; }

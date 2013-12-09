@@ -1,0 +1,7 @@
+.flex-control-nav a { background: rgb(85, 32, 64); }
+#content nav.tertiary ul li a.more.open.active { background-color: #E3DFE7; }
+#content .primary p.intro, #content .primary .feature.large-image .copy, #content .primary .feature.medium-image, #content .primary .feature.small-image, #content .primary .feature.text, #content .primary .resources, #content .primary .get-involved, #content .primary .share, #content .primary article.listing, #content .primary .listing-filter fieldset, #content .primary .contact.lists, #content .primary .contact.detail, #content .primary .pagination { border-bottom: 1px dotted #C098B1; }
+#content .primary .contact.map form button {  }
+footer .white-bar .about form input { background: #99A7AE; line-height: 30px; }
+#slider .flex-direction-nav li a, #slider .flex-direction-nav li a.flex-next, #slider .flex-direction-nav li a.flex-prev { background-color: #551F40 !important; }
+#home #slider .flex-direction-nav li a { display: block !important; }

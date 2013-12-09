@@ -1,0 +1,15 @@
+nav.primary { z-index: 1500; }
+div.sub-nav { top: 55px !important; }
+address { font-style: normal; }
+#content .secondary time span { left: 0; }
+#content .primary hgroup ul { margin: 0; }
+#content .primary hgroup ul li.related { float: left; display: block; width: 420px; }
+#content .primary hgroup .addthis_toolbox.top { clear: left; height: 30px; }
+#content .primary .contact.lists table td img { margin-top: 6px; }
+#content .primary .contact.map #map { width: 458px !important; height: 418px !important; }
+footer .green-bar h3 strong { font-size: 18px; }
+
+#home #content .primary { height: 408px !important; overflow: hidden; }
+
+.pluginButton button { width: 39px !important; background: red !important; }
+#content .primary .share .twitter, #content .primary .share .facebook, #content .primary .share .google, #content .primary .share .linkedin { width: 100px !important; }
