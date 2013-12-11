@@ -1,1 +1,1 @@
-<cfinclude template="three_column.cfm" />
+<cfinclude template="two_column_SL.cfm" />
