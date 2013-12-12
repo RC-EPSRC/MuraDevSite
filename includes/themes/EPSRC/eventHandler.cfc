@@ -142,20 +142,6 @@
 	</cfoutput>
 </cffunction>
 
-	<cffunction name="onPageDefaultBodyRender" output="true" returntype="void">
-		<cfargument name="$"  hint="mura scope" />
-
-		<cfoutput>#parseForLinks($.setDynamicContent($.content("body")))#</cfoutput>
-	</cffunction>
-
-	<cffunction name="parseForLinks" output="false" returntype="string">
-		<cfargument name="str" hint="the body as a string"/>
-		<cfset var body = arguments.str>
-		<cfset body = '<div id="XYZ123">' & body & '</div>' />
-		<cfreturn body/>
-	</cffunction>
-
-
 <cfscript>
 	public any function onBeforePageFundingCallSave($) {
 		var newBean = arguments.$.event('newBean');
@@ -207,6 +193,5 @@
 		}
 	}
 </cfscript>
-
 
 </cfcomponent>
