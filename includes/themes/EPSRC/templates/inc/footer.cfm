@@ -36,12 +36,12 @@
                                 <h2>Quick links</h2>
                                 <ul>
                                   <li><a href="/">Home</a></li>
-                                  <li><a href="/funding">Funding</a></li>
-                                  <li><a href="/research">Research</a></li>
-                                  <li><a href="/innovation">Innovation</a></li>
-                                  <li><a href="/skills">Skills</a></li>
-                                  <li><a href="/newsevents">News, events and publications</a></li>
-                                  <li><a href="/about">About us</a></li>
+                                  <li><a href="/index.cfm/funding">Funding</a></li>
+                                  <li><a href="/index.cfm/research">Research</a></li>
+                                  <li><a href="/index.cfm/innovation">Innovation</a></li>
+                                  <li><a href="/index.cfm/skills">Skills</a></li>
+                                  <li><a href="/index.cfm/newsevents">News, events and publications</a></li>
+                                  <li><a href="/index.cfm/about">About us</a></li>
                                 </ul>
                               </section>
                           </div><!-- End col-md-3 about -->

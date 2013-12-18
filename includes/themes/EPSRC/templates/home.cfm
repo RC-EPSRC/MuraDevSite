@@ -5,13 +5,14 @@
 		<div class="container"><!-- Page proper starts -->
 
 			<cfinclude template="inc/navbar.cfm" />
-	
+            
 			<div class="clear"></div>
-			#$.dspCrumblistLinks()#
 			<div class="wrap">
+			
 				<span style="background-color:##069; height:100px; display:block;">
 					lorem ipsum dolor sit amet *** HOME.CFM -> inc/navbar.cfm above ***
 				<span>	
+				
 			</div><!-- end wrap -->
 
 		</div><!-- end container (Page proper) -->
