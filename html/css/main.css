@@ -720,6 +720,36 @@ nav.tertiary ul.subpages a {
 	padding: 0 1em 1em 1em;
 }
 
+/* ------------------- Text - Table of contents --------------------- */
+
+.texttoc{
+   margin-top: 15px; 
+   color: #455A67;
+}
+
+.texttoc h3{
+    font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif; 
+    background-color: #EFF4F7; 
+    text-transform: uppercase; 
+    font-size: 90%; 
+    padding: .3em; 
+    margin-bottom: 1.5625%; 
+    margin-top: 1.5em;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.texttoc a{
+    color: #007B78; 
+    
+}
+
+.texttoc p{
+    margin: 0 20px 4px 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
 /* main5.css slider */
 /* ------------------------------------------------------------------ */
 /* =Slider */
