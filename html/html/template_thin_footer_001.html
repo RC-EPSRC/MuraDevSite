@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page - EPSRC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- jQuery -->
+        <script src="../js/jquery-1.7.2.min.js"></script>
+        <script src="../js/ytp.js"></script>
+        <!-- jQuery.cookie -->
+        <script src="../js/jquery.cookie.js"></script>
+        <!-- jQueryUI -->
+        <link rel="stylesheet" href="../css/jquery-ui-1.8.20.custom.css" />
+        <script src="../js/jquery-ui-1.8.20.custom.min.js"></script>
+        <script src="../js/cookieWidget.js"></script>
+        <script src="../js/jquery-1.js"></script>
+        <script src="../js/jquery-ui-1.js"></script>
+        <!-- Modernizr -->
+	    <script src="../js/modernizr/modernizr.js"></script>
+        <!-- Needs to be last -->
+		<script src="../js/application.js"></script> 
+        
+        <!-- Bootstrap 3 -->
+        <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+        <!-- new & rewritten CSS  -->
+        <link href="../css/reset.css" rel="stylesheet" media="screen">
+        <link href="../css/main.css" rel="stylesheet" media="screen">
+        <link href="../css/theme.less.css" rel="stylesheet" media="screen">
+        
+        <link rel="stylesheet" media="screen and (min-width: 768px), screen and (min-device-pixel-ratio: 1.5) and (orientation: landscape), screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape)" href="../css/used_within_mura/xgrid990.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="../css/used_within_mura/grid1140.css" />
+        <link rel="stylesheet" media="all" href="../css/used_within_mura/ytp.css" /> 
+        
+        <!--[if lte IE 9]> 
+		    <link rel="stylesheet" href="../css/ie9.css" media="screen" />
+	    <![endif]-->
+
+        <!--[if lte IE 8]> 
+		    <link rel="stylesheet" href="../css/xgrid990.css" media="screen" />
+            <link rel="stylesheet" href="../css/ie8.css" media="screen" />
+	    <![endif]-->
+
+        <style type="text/css">
+		@font-face {
+        font-family:"DIN Next W01 Bold";
+        src:url("../fonts/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix");
+        src:url("../fonts/b32ab78b-6c51-4bd3-bc37-4edcec0331f8.eot?#iefix") format("eot"),url("../fonts/9949035f-6226-4080-a14a-bf7d94ffb1e1.woff") format("woff"),url("../fonts/6241bd09-15c2-485e-9796-9db8d0aa6974.ttf") format("truetype"),url("../fonts/af94da3e-4232-416a-b6bc-f39f85dd5db6.svg#af94da3e-4232-416a-b6bc-f39f85dd5db6") format("svg");
+		/* Below needed for Firefox, or instead set security.fileuri.strict_origin_policy to false so FF can find files */
+		src:local("DIN Next W01 Bold"), url("../fonts/6241bd09-15c2-485e-9796-9db8d0aa6974.ttf");
+		}
+        
+		@font-face {
+        font-family:"DIN Next W01 Regular";
+        src:url("../fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix");
+        src:url("../fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix") format("eot"),url("../fonts/c5a7f89e-15b6-49a9-8259-5ea665e72191.woff") format("woff"),url("../fonts/868c94b5-ca49-46b7-b62b-297f8d861125.ttf") format("truetype"),url("../fonts/e3145f65-29b5-4f7f-8c6e-2dc135021b6a.svg#e3145f65-29b5-4f7f-8c6e-2dc135021b6a") format("svg");
+		/* Below needed for Firefox, or instead set security.fileuri.strict_origin_policy to false so FF can find files */
+		src:local("DIN Next W01 Regular"), url("../fonts/868c94b5-ca49-46b7-b62b-297f8d861125.ttf");
+		}
+        </style>
+
+		
+    </head>
+    <body>
+		<div class="main_container thin_footer"><!-- encompasses whole browser window eg for control of this area if needed, and sets footer style-->
+                    <div class="container"><!-- Page proper starts -->
+                    	<header>
+                        	<div class="wrap">
+                                <h1>
+                                    <span class="logo" tabindex="1"><a href="/"><img src="../img/logo.png" alt="EPSRC - Engineering and Physical Sciences Research Council" title="EPSRC - Engineering and Physical Sciences Research Council"/></a></span>
+                                </h1>
+<!-- ----------------------------------------------------------- MEDIA OPTION LINKS -------------------------------------------------------------------- -->
+                                <nav class="media_option_links">
+                                    <p class="none">Access Keys:</p>
+                                    <ul class="none">
+                                        <li><a accesskey="S" id="A1" class="hide" href="#skipnav">Skip navigation (access key S)</a></li>
+                                        <li><a accesskey="1" id="A2" class="hide" href="/">Home page (access key 1)</a></li>
+                                        <li><a accesskey="2" id="A3" class="hide" href="/newsevents/Pages/latestupdates.aspx">What's new (access key 2)</a></li>
+                                        <li><a accesskey="3" id="A4" class="hide" href="/use/Pages/sitemap.aspx">Site map (access key 3)</a></li>
+                                        <li><a accesskey="4" id="A5" class="hide" href="/Pages/searchresults.aspx">Search (access key 4)</a></li>
+                                        <li><a accesskey="6" id="A6" class="hide" href="/use/help/Pages/help.aspx">Help (access key 6)</a></li>
+                                        <li><a accesskey="7" id="A7" class="hide" href="/about/standards/Pages/complaints.aspx">Complaints procedure (access key 7)</a></li>
+                                        <li><a accesskey="8" id="A8" class="hide" href="/use/Pages/terms.aspx">Terms and conditions (access key 8)</a></li>
+                                        <li><a accesskey="9" id="A9" class="hide" href="/about/contactus/Pages/feedback.aspx">Feedback form (access key 9)</a></li>
+                                        <li><a accesskey="0" id="A10" class="hide" href="/use/accessibility/Pages/accessibility.aspx#keys">Access key details (access key 0)</a></li>
+                                    </ul>
+                                    <ul class="visible_links">
+                                        <li><a href="#skipnav" accesskey="S" tabindex="2">Skip Navigation</a></li>
+                                        <li><a href="/use/accessibility" tabindex="3">Accessibility</a></li>
+                                        <li><a href="/newsevents/news/Pages/mediacontacts.aspx" tabindex="4">Media Enquiries</a></li>
+                                        <li class="omega">
+                                            <fieldset>
+                                                <a href="/use/Pages/cookies.aspx" id="cookieAcceptorLnk" tabindex="6"><input type="checkbox" name="cookieAcceptor" value="" id="cookieAcceptor" tabindex="5"><label for="cookies">Accept Cookies</label></a>
+                                            </fieldset>
+                                        </li>
+                                        <li class="social youtube"><a href="http://www.youtube.com/epsrcvideo/" tabindex="7"><img src="../img/youtube-header.png" alt="YouTube" width="48" height="45" /></a></li>
+                                        <li class="social twitter"><a href="http://www.twitter.com/epsrc/" tabindex="8"><img src="../img/twitter-header.png" alt="Twitter" width="47" height="41" /></a></li>
+                                        <li class="social rss"><a href="/newsevents/pages/feeds.aspx" tabindex="9"><img src="../img/rss-header.png" alt="RSS" width="46" height="42" /></a></li>
+                                    </ul>
+                                </nav> <!-- end nav.media_option_links -->
+                                
+                                <div class="resizer" aria-hidden="true">
+                                    <span>Change text size:</span> <a href="#" class="small" tabindex="10">A</a> <a href="#" class="medium" tabindex="11">A</a> <a href="#" class="large" tabindex="12">A</a>
+                                </div>
+                                <div class="search-box">
+                                    <fieldset>
+                                       <div>
+                                            <div class="SearchDivClass"><label  title="Firefox 25" class="SearchLabelNoShow">Search this site here</label><input type="text" class="SearchTextbox" tabindex="13" placeholder="Search" /><input type="submit" value=" "  class="searchsubmit" tabindex="14" /></div>
+                                       </div>
+                                        <!--Set TextEntryMode = StaticMarkup for Google Custom Search Engine or TextBox for Google Mini -->
+                                    </fieldset>
+                   				 </div> <!-- end div.search-box -->
+
+                            </div> <!-- end div.wrap -->
+
+                            <!-- END Media Option Links-->
+                            
+ <!-- ----------------------------------------------------------- PRIMARY NAV -------------------------------------------------------------------- -->                           
+                            <!-- Primary Nav -->
+                            <nav class="primary">
+                    			<div class="wrap">
+                                    <ul class="nav">
+                                        <li class="home"><a class="" href="/Pages/default.aspx">Home</a></li>
+                                        <li class="funding"><a class="" href="/funding/Pages/funding.aspx">Funding</a></li>
+                                        <li class="research"><a class="" href="/research/Pages/research.aspx">Research</a></li>
+                                        <li class="innovation"><a class="" href="/innovation/Pages/innovation.aspx">Innovation</a></li>
+                                        <li class="skills"><a class="" href="/skills/Pages/skills.aspx">Skills</a></li>
+                                        <li class="news"><a class="" href="/NEWSEVENTS/Pages/newseventspubs.aspx">News, events and publications</a></li>
+                                        <li class="about"><a class="" href="/about/Pages/aboutus.aspx">About us</a></li>
+                                    </ul>
+                             	</div> <!-- end div.wrap -->
+                                <!---------------------------- START SUB NAV (MEGA DROPDOWN) ------------------------------->
+                                <div class="funding sub-nav">
+	
+                                    <div class="wrap">
+                                            
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/funding/routes/Pages/grants.aspx">Funding routes</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/funding/routes/Pages/az.aspx">Funding Schemes</a>
+                                    </li>
+                                    <li><a href="/funding/routes/rb/Pages/funding.aspx">Research base funding</a>
+                                    </li>
+                                    <li><a href="/funding/routes/newac/Pages/academics.aspx">New academics</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/funding/guidance/Pages/guidance.aspx">Guidance</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/funding/guidance/basics/Pages/basics.aspx">Funding basics</a>
+                                    </li>
+                                    <li><a href="/funding/guidance/Pages/eligibility.aspx">Eligibility</a>
+                                    </li>
+                                    <li><a href="/funding/guidance/fundingguide/Pages/fundingguide.aspx">Funding guide</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/funding/calls/Pages/calls.aspx">Calls</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/funding/calls/open/Pages/opencalls.aspx">Open Calls</a>
+                                    </li>
+                                    <li><a href="/funding/calls/Pages/future.aspx">Future calls</a>
+                                    </li>
+                                    <li><a href="/funding/calls/2013/Pages/2013.aspx">2013</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/funding/peerrev/Pages/peer.aspx">Peer review</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/funding/peerrev/college/Pages/peerreview.aspx">College</a>
+                                    </li>
+                                    <li><a href="/funding/peerrev/panels/Pages/panels.aspx">Peer review panels</a>
+                                    </li>
+                                    <li><a href="/funding/peerrev/review/Pages/proposals.aspx">Reviewing proposals</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/funding/successrates/Pages/successrates.aspx">Success rates</a>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/funding/successrates/previous/Pages/previous.aspx">Funding rates for previous years</a>
+                                    </li>
+                                    <li><a href="/funding/successrates/Pages/201213.aspx">2012-13</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/funding/forms/Pages/forms.aspx">Forms</a>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/funding/forms/app/Pages/forms.aspx">Application forms</a>
+                                    </li>
+                                    <li><a href="/funding/forms/fr/Pages/final.aspx">Final report forms</a>
+                                    </li>
+                                    <li><a href="/funding/forms/rev/Pages/reviewer.aspx">Reviewer forms and guidance notes</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="research sub-nav">
+                                        
+                                    <div class="wrap">
+                                            
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/research/ourportfolio/Pages/portfolio.aspx">Our portfolio</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/research/ourportfolio/Pages/strategic.aspx">Our approach</a>
+                                    </li>
+                                    <li><a href="/research/ourportfolio/themes/Pages/themes.aspx">Themes</a>
+                                    </li>
+                                    <li><a href="/research/ourportfolio/researchareas/Pages/researchareas.aspx">Research areas</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/research/facilities/Pages/facilities.aspx">Facilities and equipment</a>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/research/facilities/equipment/Pages/equipment.aspx">Equipment funding</a>
+                                    </li>
+                                    <li><a href="/research/facilities/hpc/Pages/computing.aspx">High performance computing and support</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/research/centres/Pages/centres.aspx">Centres and major investments</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/research/centres/Pages/acecybersecurity.aspx">Academic Centres of Excellence in Cyber Security Research</a>
+                                    </li>
+                                    <li><a href="/skills/students/centres/Pages/centres.aspx">Centres for Doctoral Training (CDT)</a>
+                                    </li>
+                                    <li><a href="/research/centres/innovativemanufacturing/Pages/centres.aspx">EPSRC Centres for Innovative Manufacturing</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/casestudies/Pages/casestudies.aspx">Case studies</a>
+                                                    </h2>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/research/partnerships/Pages/partnerships.aspx">Partnerships</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/partner/Pages/strategic.aspx">Current strategic partnerships</a>
+                                    </li>
+                                    <li><a href="/about/partner/international/Pages/international.aspx">International partnerships</a>
+                                    </li>
+                                    <li><a href="/about/partner/Pages/regions.aspx">UK regions</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/research/framework/Pages/framework.aspx">Framework for responsible innovation</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/research/framework/Pages/area.aspx">Anticipate, reflect, engage and act (AREA)</a>
+                                    </li>
+                                    <li><a href="/research/framework/Pages/approach.aspx">Support</a>
+                                    </li>
+                                    <li><a href="/research/framework/Pages/expectations.aspx">Expectations</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="innovation sub-nav">
+                                        
+                                    <div class="wrap">
+                                            
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/innovation/business/Pages/business.aspx">Connecting with business</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/innovation/business/otherways/Pages/engage.aspx">Other ways for business to engage with EPSRC</a>
+                                    </li>
+                                    <li><a href="/innovation/business/schemes/Pages/opportunities.aspx">Business collaboration opportunities</a>
+                                    </li>
+                                    <li><a href="/innovation/business/resources/Pages/portfolio.aspx">Information on our current portfolio</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/innovation/partnerships/Pages/partnerships.aspx">Partnerships</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/partner/Pages/strategic.aspx">Current strategic partnerships</a>
+                                    </li>
+                                    <li><a href="/about/partner/international/Pages/international.aspx">International partnerships</a>
+                                    </li>
+                                    <li><a href="/about/partner/Pages/regions.aspx">UK regions</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/casestudies/">Case studies</a>
+                                                    </h2>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="skills sub-nav">
+                                        
+                                    <div class="wrap">
+                                            
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/skills/fellows/Pages/fellowships.aspx">Fellowships</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/skills/fellows/Pages/epsrcfellowships.aspx">EPSRC Fellowships - a new approach</a>
+                                    </li>
+                                    <li><a href="/skills/fellows/Pages/whocanapply.aspx">Who can apply</a>
+                                    </li>
+                                    <li><a href="/skills/fellows/Pages/refreshoffellowshippriorityareas.aspx">On-going refresh of fellowship priority areas</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/skills/students/Pages/studentships.aspx">Studentships</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/skills/students/help/Pages/help.aspx">Help for students</a>
+                                    </li>
+                                    <li><a href="/skills/students/dta/Pages/dta.aspx">Doctoral training accounts</a>
+                                    </li>
+                                    <li><a href="/skills/students/coll/Pages/training.aspx">Collaborative training</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="news sub-nav">
+                                        
+                                    <div class="wrap">
+                                            
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/Pages/latestupdates.aspx">Latest updates</a>
+                                                    </h2>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/NEWSEVENTS/NEWS/Pages/news.aspx">News</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/newsevents/news/2013/Pages/2013.aspx">2013</a>
+                                    </li>
+                                    <li><a href="/newsevents/news/2012/Pages/2012.aspx">2012</a>
+                                    </li>
+                                    <li><a href="/newsevents/news/2011/Pages/2011.aspx">2011</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/casestudies/Pages/casestudies.aspx">Case studies</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/NEWSEVENTS/CASESTUDIES/2013/Pages/2013.aspx">2013</a>
+                                    </li>
+                                    <li><a href="/newsevents/casestudies/2012/Pages/2012.aspx">2012</a>
+                                    </li>
+                                    <li><a href="/newsevents/casestudies/2011/Pages/2011.aspx">2011</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/pubs/Pages/publications.aspx">Publications</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/newsevents/pubs/mags/Pages/magazines.aspx">Magazines and newsletters</a>
+                                    </li>
+                                    <li><a href="/newsevents/pubs/brochures/Pages/brochures.aspx">Brochures</a>
+                                    </li>
+                                    <li><a href="/newsevents/pubs/corporate/Pages/corporate.aspx">Corporate</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/multimedia/Pages/videoaudio.aspx">Multimedia</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/newsevents/multimedia/2013/Pages/2013.aspx">2013</a>
+                                    </li>
+                                    <li><a href="/newsevents/multimedia/2012/Pages/2012.aspx">2012</a>
+                                    </li>
+                                    <li><a href="/newsevents/multimedia/2011/Pages/2011.aspx">2011</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/events/Pages/events.aspx">Events</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/newsevents/events/2013/Pages/2013.aspx">2013</a>
+                                    </li>
+                                    <li><a href="/newsevents/events/2012/Pages/2012.aspx">2012</a>
+                                    </li>
+                                    <li><a href="/newsevents/events/2011/Pages/2011.aspx">2011</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/reviews/Pages/reviews.aspx">Reviews</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/newsevents/reviews/Pages/supergen.aspx">Future of SUPERGEN</a>
+                                    </li>
+                                    <li><a href="/newsevents/reviews/Pages/expert.aspx">Fusion expert group</a>
+                                    </li>
+                                    <li><a href="/newsevents/reviews/Pages/nuclear.aspx">Nuclear physics and nuclear engineering consultation</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/experiments/Pages/experiments.aspx">Experiments for children</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/newsevents/experiments/Pages/BottledEgg.aspx">Bottled egg</a>
+                                    </li>
+                                    <li><a href="/newsevents/experiments/Pages/cloudinabottle.aspx">Cloud in a bottle</a>
+                                    </li>
+                                    <li><a href="/newsevents/experiments/Pages/crushanegg.aspx">Crush an egg</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/Pages/alerts.aspx">Email alerts and newsletters</a>
+                                                    </h2>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/newsevents/Pages/feeds.aspx">RSS feeds</a>
+                                                    </h2>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="about sub-nav">
+                                        
+                                    <div class="wrap">
+                                            
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/org/Pages/organisation.aspx">Organisation</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/org/Pages/seniorstaff.aspx">Senior staff</a>
+                                    </li>
+                                    <li><a href="/about/org/Pages/businessinnovation.aspx">Business innovation</a>
+                                    </li>
+                                    <li><a href="/about/org/Pages/operations.aspx">Operations directorate</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/history/Pages/history.aspx">History</a>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/history/Pages/ourbeginnings.aspx">Our beginnings</a>
+                                    </li>
+                                    <li><a href="/about/history/Pages/royalcharter2003.aspx">Royal Charter - 2003</a>
+                                    </li>
+                                    <li><a href="/about/history/Pages/royalcharter1994.aspx">Royal Charter - 1994</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/governance/Pages/governance.aspx">Our governance and advisory bodies</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/governance/council/Pages/council.aspx">Council</a>
+                                    </li>
+                                    <li><a href="/about/governance/rac/Pages/committee.aspx">Resource Audit Committee</a>
+                                    </li>
+                                    <li><a href="/about/governance/Pages/termsofreference.aspx">Appointments Assurance Committee</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/plans/Pages/ourplans.aspx">Strategy and delivery plan</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/plans/strategicplan/Pages/strategicplan.aspx">Strategic Plan</a>
+                                    </li>
+                                    <li><a href="/about/plans/deliveryplan/Pages/deliveryplan.aspx">Delivery Plan</a>
+                                    </li>
+                                    <li><a href="/about/plans/implementingdeliveryplan/Pages/deliveryplan.aspx">Implementing the Delivery Plan</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/facts/Pages/facts.aspx">Facts and figures</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/facts/Pages/mission.aspx">Mission and vision</a>
+                                    </li>
+                                    <li><a href="/about/plans/deliveryplan/Pages/next.aspx">Budget and finances</a>
+                                    </li>
+                                    <li><a href="/about/facts/Pages/centres.aspx">EPSRC-funded centres</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/standards/Pages/service.aspx">Service standards and policies</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/standards/Pages/standards.aspx">Service standards and policies</a>
+                                    </li>
+                                    <li><a href="/about/standards/employment/Pages/employment.aspx">Employment policies, standards and guidance</a>
+                                    </li>
+                                    <li><a href="/about/standards/Pages/researchadmin.aspx">Research admin standards</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    <div>
+                                                
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/partner/Pages/partnerships.aspx">Partnerships</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/partner/Pages/strategic.aspx">Current strategic partnerships</a>
+                                    </li>
+                                    <li><a href="/about/partner/international/Pages/international.aspx">International</a>
+                                    </li>
+                                    <li><a href="/about/partner/Pages/regions.aspx">UK regions</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/infoaccess/Pages/access.aspx">Access to information</a>  <span>&hellip;</span>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/infoaccess/Pages/foirequests.aspx">Freedom of information requests</a>
+                                    </li>
+                                    <li><a href="/about/infoaccess/Pages/foiappeal.aspx">Appeal against non-disclosure</a>
+                                    </li>
+                                    <li><a href="/about/infoaccess/Pages/foicommitment.aspx">EPSRC commitment to freedom of information</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/logos/Pages/logos.aspx">Logos and visual identity</a>
+                                                    </h2>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/vacancies/Pages/careers.aspx">Vacancies</a>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/vacancies/Pages/benefits.aspx">Staff benefits</a>
+                                    </li>
+                                    <li><a href="/about/vacancies/Pages/irecruithints.aspx">TopCareer.jobs hints and tips</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    <section>
+                                                    
+                                    <h2>
+                                                        <a href="/about/contactus/Pages/contacts.aspx">Contact us</a>
+                                                    </h2>
+                                    <ul>
+                                                        
+                                    <li><a href="/about/contactus/Pages/findus.aspx">How to find us</a>
+                                    </li>
+                                    <li><a href="/about/contactus/Pages/feedback.aspx">Feedback</a>
+                                    </li>
+                                    
+                                                    </ul>
+                                    
+                                                </section>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                </nav>
+                                <div class="clear"></div>
+                                <!----------------------------- END SUB NAV (MEGA DROPDOWN) -------------------------------->
+                                <!-- End of Primary Nav -->
+                
+                            </header>
+                      
+ <!-- ----------------------------------------------------------- SLIDER START -------------------------------------------------------------------- -->                     		
+                        	<!-- begin EPSRCBasicNoteFieldTopText -->
+                            <div class="fieldcontrol">
+                              <div id="slider">
+                            <div class="wrap">
+                              <div class="flexslider">
+                                <ul class="slides">
+                                  <li class="slide one">
+                                    <div data-picture data-alt="">
+                                      <div data-src="../img/bannerplanewing960.jpg"></div>
+                                      <div data-src="../img/bannerplanewing1148.jpg" data-media="screen and (min-width: 1200px)"></div>
+                                      <div data-src="../img/bannerplanewing960.jpg" data-media="(max-width: 767px)"></div>
+                                      <div data-src="../img/bannerplanewing960.jpg" data-media="(max-width: 768px) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5)"></div>
+                                      <noscript>
+                                        <img src="../img/bannerplanewing960.jpg" alt="">
+                                      </noscript>
+                                    </div>
+                                    <h2><a href="/funding/">Fuelling growth and prosperity</a></h2>
+                                    <p>Investing in world-leading discovery, ingenious people and delivering innovation that fuels long-term growth</p>
+                                  </li>
+                                  <li class="slide two">
+                                    <div data-picture data-alt="">
+                                      <div data-src="../img/bannerglobehand960.jpg"></div>
+                                      <div data-src="../img/bannerglobehand1148.jpg" data-media="screen and (min-width: 1200px)"></div>
+                                      <div data-src="../img/bannerglobehand960.jpg" data-media="(max-width: 767px)"></div>
+                                      <div data-src="../img/bannerglobehand960.jpg" data-media="(max-width: 768px) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5)"></div>
+                                      <noscript>
+                                        <img src="../img/bannerglobehand960.jpg" alt="">
+                                      </noscript>
+                                    </div>
+                                    <h2><a href="/research/">World-leading discovery</a></h2>
+                                    <p>Creating the opportunities and environment for the UK to be the best place in the world to do research</p>
+                                  </li>
+                                  <li class="slide three">
+                                    <div data-picture data-alt="">
+                                      <div data-src="../img/bannerfiber960.jpg"></div>
+                                      <div data-src="../img/bannerfiber1148.jpg" data-media="screen and (min-width: 1200px)"></div>
+                                      <div data-src="../img/bannerfiber960.jpg" data-media="(max-width: 767px)"></div>
+                                      <div data-src="../img/bannerfiber960.jpg" data-media="(max-width: 768px) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5)"></div>
+                                      <noscript>
+                                        <img src="../img/bannerfiber960.jpg" alt="">
+                                      </noscript>
+                                    </div>
+                                    <h2><a href="/innovation/">Fuelling innovation</a></h2>
+                                    <p>Connecting industry with academia to capitalise on innovative research for the prosperity and sustainability of the UK</p>
+                                  </li>
+                                  <li class="slide four">
+                                    <div data-picture data-alt="">
+                                      <div data-src="../img/bannermeeting960.jpg"></div>
+                                      <div data-src="../img/bannermeeting1148.jpg" data-media="screen and (min-width: 1200px)"></div>
+                                      <div data-src="../img/bannermeeting960.jpg" data-media="(max-width: 767px)"></div>
+                                      <div data-src="../img/bannermeeting960.jpg" data-media="(max-width: 768px) and (min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5)"></div>
+                                      <noscript>
+                                        <img src="../img/bannermeeting960.jpg" alt="">
+                                      </noscript>
+                                    </div>
+                                    <h2><a href="/skills/">Ingenious people</a></h2>
+                                    <p>Supporting our very best researchers throughout their careers by fostering their ambition, innovation and adventure </p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- end EPSRCBasicNoteFieldTopText -->
+ <!-- ----------------------------------------------------------- SLIDER END -------------------------------------------------------------------- -->
+
+ <!-- ---------------------------------------------------------- CENTRAL CONTENT ---------------------------------------------------------------- -->
+            			<div class="clear"></div>
+   
+                        <div class="wrap">
+ 								<span style="background-color:#069; height:100px; display:block;">
+                                	lorem ipsum dolor sit amet
+                                <span>	
+                    	</div><!-- end wrap -->
+                        
+                    </div><!-- end container center -->
+                    
+            		<div class="push"></div><!-- div needed for sticky footer -->
+        </div><!-- end main_container (encompasses whole browser window eg for control of this area if needed) -->
+        
+ <!-- ----------------------------------------------------------- FOOTER -------------------------------------------------------------------- -->
+        <footer class="thin_footer">
+            <div class="footer_bar">
+                <div class="container center teal_bkg">
+                    <div class="wrap">
+                            <div class="child uppercase">Connect with EPSRC</div>
+                            <ul class="visible_links">
+                                    <li class="social youtube"><a href="http://www.youtube.com/epsrcvideo/" tabindex="7"><img src="../img/youtube-header.png" alt="YouTube" width="48" height="45" /></a></li>
+                                    <li class="social twitter"><a href="http://www.twitter.com/epsrc/" tabindex="8"><img src="../img/twitter-header.png" alt="Twitter" width="47" height="41" /></a></li>
+                                    <li class="social rss"><a href="/newsevents/pages/feeds.aspx" tabindex="9"><img src="../img/rss-header.png" alt="RSS" width="46" height="42" /></a></li>
+                            </ul>
+                        
+                    </div><!-- END wrap -->
+                </div><!-- END container center -->
+            </div><!-- END footer_bar -->
+                <div class="container center grey_tint2_bkg footer_text">
+                    <div class="wrap">
+                      <div class="links">
+                      <span class="main_links">
+                      <a href="/">Home</a> | <a href="/funding">Funding</a> | <a href="/research">Research</a> | <a href="/innovation">Innovation</a> | <a href="/skills">Skills</a> | <a href="/newsevents">News, events and publications</a> | <a href="/about">About us</a>
+                      </span><p>
+                      <a href="/cymraeg/amdanomni/Pages/amdanomni.aspx">Cymraeg</a> | <a href="/use/pages/copyright.aspx">Copyright</a> | <a href="/use/help">Help</a> | <a href="/use/Pages/cookies.aspx">Cookies (Privacy)</a> | <a href="/glossary">Glossary</a> | <a href="/about/contactus">Contact Us</a> | <a href="/use/pages/terms.aspx">Terms of use</a> | <a href="/about/infoaccess">FoI (Freedom of Information)</a> | <a href="/use/pages/sitemap.aspx">Site map</a></p>
+                        </div> <!-- end div.quick_links -->
+                        <div class="copyright">
+                          <p>Copyright <span>2013</span>. Engineering and Physical Sciences Research Council</p>
+                        </div> <!-- end div.copyright -->
+                    </div><!-- END wrap -->
+                 </div><!-- END container center grey_tint2_bkg footer_text -->
+             </div><!-- END footer -->
+      	</footer><!-- END Footer element -->
+    </body>
+</html>

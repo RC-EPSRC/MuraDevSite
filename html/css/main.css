@@ -1,0 +1,1078 @@
+/* ------------------------------------ From Grid990.css ------------------------------------- */
+
+body {
+  min-width: 960px;
+}
+
+.wrap {
+  width: 960px; 
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+	font-size: 65%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+	font-size: 90%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  body {
+	font-size: 115%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  body {
+	font-size: 140%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+	font-size: 100%;
+  }
+}
+/* ----------------------------------- FONTS ----------------------------------- */
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+nav.primary div.wrap ul.nav a {
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif; /* 'Helvetica W01 Roman' */
+  font-weight: normal;
+}
+
+h1 {
+  font-family:"DIN Next W01 Bold";
+  font-size: 3em;
+}
+
+.din {
+	font-family: "DIN Next W01 Regular";
+}
+/* -----------------------------------  COLOURS  ----------------------------------- */
+
+/* ------- TEAL ---------- */
+.teal {
+	color:#00736b;
+}
+.teal_bkg {
+	background-color:#00736b;
+}
+.teal_tint1 {
+	color:#7fb9b5; 
+}
+.teal_tint1_bkg {
+	background-color:#7fb9b5; 
+}
+.teal_tint2 {
+	color:#b2d5d2;
+}
+.teal_tint2_bkg {
+	background-color:#b2d5d2;
+}
+/* ------- PLUM ---------- */
+.plum {
+	color:#68003f;
+}
+.plum_bkg {
+	background-color:#68003f;
+}
+.plum_tint1 {
+	color:#b37f9f; 
+}
+.plum_tint1_bkg {
+	background-color:#b37f9f; 
+}
+.plum_tint2 {
+	color:#d1b2c5;
+}
+.plum_tint2_bkg {
+	background-color:#d1b2c5;
+}
+/* -----------SECONDARY COLOURS : Tint1 is 50% of original colour, Tint2 is 30% (exceptions exist)------------- */
+
+/* ------- YELLOW ---------- */
+.yellow {
+	color:#f7c100; 
+}
+.yellow_bkg {
+	background-color:#f7c100; 
+}
+.yellow_tint1 {
+	color:#fbe07f; 
+}
+.yellow_tint1_bkg {
+	background-color:#fbe07f; 
+}
+.yellow_tint2 {
+	color:#fdecb2;
+}
+.yellow_tint2_bkg {
+	background-color:#fdecb2;
+}
+/* ------- BLUE ---------- */
+.blue {
+	color:#006ebe; 
+}
+.blue_bkg {
+	background-color:#006ebe; 
+}
+.blue_tint1 {
+	color:#7fb6de; 
+}
+.blue_tint1_bkg {
+	background-color:#7fb6de; 
+}
+.blue_tint2 {
+	color:#b2d3eb;
+}
+.blue_tint2_bkg {
+	background-color:#b2d3eb;
+}
+/* ------- GREEN ---------- */
+.green {
+	color:#60a81d; 
+}
+.green_bkg {
+	background-color:#60a81d; 
+}
+.green_tint1 {
+	color:#afd38e; 
+}
+.green_tint1_bkg {
+	background-color:#afd38e; 
+}
+.green_tint2 {
+	color:#cfe5bb;
+}
+.green_tint2_bkg {
+	background-color:#cfe5bb;
+}
+/* ------- PURPLE ---------- */
+.purple {
+	color:#430071; 
+}
+.purple_bkg {
+	background-color:#430071; 
+}
+.purple_tint1 {
+	color:#a17fb8; 
+}
+.purple_tint1_bkg {
+	background-color:#a17fb8; 
+}
+.purple_tint2 {
+	color:#c6b2d4;
+}
+.purple_tint2_bkg {
+	background-color:#c6b2d4;
+}
+/* ------- RED ---------- */
+.red {
+	color:#dc3900; 
+}
+.red_bkg {
+	background-color:#dc3900; 
+}
+.red_tint1 {
+	color:#ed9c7f; 
+}
+.red_tint1_bkg {
+	background-color:#ed9c7f; 
+}
+.red_tint2 {
+	color:#f4c3b2;
+}
+.red_tint2_bkg {
+	background-color:#f4c3b2;
+}
+/* ------- GREY ---------- */
+.grey {
+	color:#b4b6b9; 
+}
+.grey_bkg {
+	background-color:#b4b6b9; 
+}
+.grey_tint1 {
+	color:#d9dadc; 
+}
+.grey_tint1_bkg {
+	background-color:#d9dadc; 
+}
+.grey_tint2 {
+	color:#eff0f0; /* actual tint at 30% is #3839ea, but we're using 21% for accessibility reasons */
+}
+.grey_tint2_bkg {
+	background-color:#eff0f0; /* actual tint at 30% is #3839ea, but we're using 21% for accessibility reasons */
+}
+
+/* -----------------------------------  GENERAL  ----------------------------------- */
+
+.none {
+	display:none;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+/* -----------------------------------  HEADER  ----------------------------------- */
+
+header {
+  padding: 0px;
+}
+header .wrap {
+  position: relative;
+}
+header .logo {
+  width: 200px;
+  height: 78px;
+  display: block;
+  margin: 0px 0px 20px 10px;
+  float: none;
+}
+header .logo img {
+  width: 100%;
+  height: auto;
+}
+header .mobile,
+header .menu,
+header .search {
+  display: none !important;
+}
+header h1 {
+  margin: 0.47em 0;
+  font-size: 2em;
+}
+
+/* -----------------------------------  HEADER SEARCH ----------------------------------- */
+
+header .search-box fieldset input {
+  /* border: 1px solid #61798a; epo not in Brand palette */
+  border: 1px solid #b4b6b9; /* epo using Brand grey instead */
+  color: #455a67;
+  position: absolute;
+  padding: 0.78125%;
+  padding-right: 3.125%;
+  right: 10px;
+  top: 47px;
+  width: 164px;
+  height: 32px;
+  line-height: 32px;
+  font-family: Arial, Helvetica, Verdana, Sans-serif;
+  font-weight: normal;
+  font-size: 0.8125em;
+  margin: 0px;
+  background: #ffffff url('../img/search.gif') no-repeat 95% 50%;
+}
+
+/* added by cno2 */
+header .search-box fieldset label.SearchLabelNoShow {
+	margin: 0;
+	width: 1ex;
+	display: none;
+}
+
+/* ---- PLACEHOLDER STYLING FOR SEARCH BOX ---- */
+header .search-box fieldset ::-webkit-input-placeholder { /* WebKit browsers */
+  color: #455a67;
+}
+header .search-box fieldset ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #455a67;
+}
+header .search-box fieldset input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #455a67;
+}
+header .search-box fieldset input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #455a67;
+}
+
+/* added by cno2 */
+header .search-box fieldset input.searchsubmit { /* search 'button' active area */
+  width: 25px;  
+  border: 0;
+  background: none;
+}
+
+/* -----------------------------------  HEADER RESIZER ----------------------------------- */
+
+header .resizer {
+  display: block;
+  position: absolute;
+  right: 202px;
+  top: 51px;
+  vertical-align:bottom;
+  height:28px;
+  line-height:1.6;
+}
+header .resizer span {
+  display: inline-block;
+  float: left;
+  color: #455a67;
+  font-size: 0.8125em;
+  top: 12px;
+  position: relative;
+  font-family: Arial, Helvetica, Verdana, Sans-serif;
+}
+header .resizer a {
+  display: inline-block;
+  float: left;
+  padding: 0px 5px;
+  border: 1px solid #61798A;
+  margin-left: 10px;
+  position: relative;
+  color: #00736b;
+  font-weight: bold;
+  font-family: Arial, Helvetica, Verdana, Sans-serif;
+}
+header .resizer a.small {
+  font-size: 0.75em;
+  top: 7px;
+}
+header .resizer a.medium {
+  font-size: 0.875em;
+  top: 4px;
+}
+header .resizer a.large {
+  font-size: 1em;
+  top: 1px;
+}
+/* -----------------------------------    FOOTER    ----------------------------------- */
+/* Adjusting footer height?? See 'Negative indent footer by it's height' in STRUCTURAL LAYOUT */
+
+.push { /* set this to match Negative indent value */
+  height: 387px; /* the fat footer height is the default height */
+}
+div.main_container.thin_footer > .push { /* IF page is using thin footer, set this to match Negative indent value */
+  height: 201px;/* thin footer height */
+}
+.footer_bar {
+  height:54px;
+  color: #ffffff;
+  letter-spacing:0.03em;
+  font-size:1.45em;
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+}
+.footer_bar div.child {
+	display: table-cell;
+    height: 54px;
+    vertical-align: middle;
+}
+.footer_bar ul.visible_links {
+  position:relative;
+  display: inline-block;
+  float:right;
+  margin-top:-48px; /* negative margin!  */
+}
+/* ----------------Fat & Thin Footer CSS ------------------- */
+footer {
+  font-family: Arial, Helvetica, Verdana, Sans-serif;
+  color: #455A67; /* non standard grey-blue text*/
+  line-height: 1.6;
+  font-size: 0.875em;
+}
+footer h2 {
+  font-size: 1.125em;
+  color: #68003f;
+  margin-bottom: 1em;
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+footer .main_links {
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  font-size: 1.3em;
+}
+footer .about p {
+  margin-bottom: 2em;
+}
+footer .about p.images a { /* epo would prefer to use nth-child but IE8 does not support it */
+  float:left;
+}
+footer .about p.images a + a { /* epo would prefer to use nth-child but IE8 does not support it */
+  float:right;
+}
+footer .row {
+  padding-top: 1em;
+}
+footer .links {
+  font-size: 0.9em;
+  padding: 20px 0;
+}
+footer .copyright{
+  padding: 20px 0;
+  font-size: 0.875em;
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-top: 1px solid #455a67;
+}
+/* ----------------------------------- STRUCTURAL LAYOUT ----------------------------------- */
+
+.main_container {
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -387px;
+}
+
+.main_container.thin_footer { /* For use when displaying the thin footer */
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -201px;
+}
+
+/* -----------------------------------  PRIMARY NAV ----------------------------------- */
+
+header nav.primary {
+  position: relative;
+  display: block;
+  background: #00736b; /* old incorrect colour for temporary ref */
+  background: #00736b; /* new darker colour (still incorrect but accessible)*/
+  line-height: 1;
+  font-size:0.89em;
+}
+nav.primary div.wrap { /* Added by TW (25/01/2013)  */
+  margin-bottom: 0;
+}
+header nav.primary ul.nav {
+  height: 39px;
+  overflow: hidden;
+}
+header nav.primary ul.nav li {
+  display: inline;
+}
+header nav.primary ul.nav li a {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  font-weight: normal;
+  padding: 0 25px;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  background-image: url(../img/active-nav.png);
+  background-position: 50% 200%;
+  background-repeat: no-repeat;
+}
+header nav.primary ul.nav li a:hover,
+header nav.primary ul.nav li a:focus,
+header nav.primary ul.nav li a.hover,
+header nav.primary ul.nav li a.active {
+  background-position: 50% 90%;
+}
+/* -----------------------------------  SUB NAV ----------------------------------- */
+header nav.primary .sub-nav {
+  display: none; /* Initially hides the megadropdown */
+  position: absolute;
+  top: 39px;
+  /* Next two rules added by TW (30/01/2013) - these centre the mega-dropdown in the viewport */
+  left: 50%;
+  margin-left: -480px;
+  width: 960px; /* was 100% - TW (30/01/2013) */
+  z-index: 1500;
+  background: #00736b;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 0px 5px 10px #999999; 
+  padding: 40px 0 20px 0;
+}
+header nav.primary .sub-nav div div {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
+header nav.primary .sub-nav div div section {
+  margin-bottom: 20px;
+}
+header nav.primary .sub-nav div div section a {
+  color: #ffffff;
+}
+header nav.primary .sub-nav div div section h2 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  font-weight: normal;
+  margin-bottom: 5px;
+  background-color: #005555; /* Added by TW (31/01/2013) */
+  padding: .3em .2em .2em .3em;
+}
+header nav.primary .sub-nav div div section h2 span {
+  color: #ffffff;
+  text-align: right;
+}
+header nav.primary .sub-nav div div section ul li {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  margin-bottom: 10px;
+}
+header nav.primary .sub-nav div div section ul li {
+  font-size: 0.8125em;
+  margin-bottom: 10px;
+  padding-left: .5em; /* Added by TW (31/01/2013) */
+  font-family: Arial, Helvetica, Verdana, Sans-serif;
+  list-style: none outside none;
+}
+
+/* -----------------------------------  MEDIA OPTION LINKS ----------------------------------- */
+header nav.media_option_links {
+  position: absolute;
+  right: 10px;
+  top: -7px;
+  display: block;
+}
+header nav.media_option_links ul li {
+  display: inline;
+  text-align:center;
+}
+header nav.media_option_links ul li a {
+  font-family: Arial, Helvetica, Verdana, Sans-serif;
+  font-size: 0.7rem;
+  padding-left: 7px;
+  padding-right: 13px;
+  padding-top: 2px;
+  border-right: 1px solid rgba(1, 131, 121, 0.8);
+  display: inline-block;
+  height: 18px;
+}
+header nav.media_option_links ul li form,
+header nav.media_option_links ul li fieldset {
+  display: inline;
+  float: left;
+}
+header nav.media_option_links ul li fieldset input {
+  display: inline-block;
+  float: right;
+  position:relative;
+  margin-left:5px;
+  right:-5px;
+  top:-3px;
+}
+header nav.media_option_links ul li.omega a {
+  border: none;
+}
+header nav.media_option_links ul.visible_links li, .footer_bar ul.visible_links li {
+  vertical-align: middle;
+  display:inline-block;
+}
+header nav.media_option_links ul.visible_links li.social, .footer_bar ul.visible_links li.social { 
+  height: 45px;
+  width: 48px;
+  padding:0px;
+  margin-right:-3px;
+}
+header nav.media_option_links ul li.social a, .footer_bar ul.visible_links li.social a { /* no padding for social class li's */
+  padding:0px;
+}
+header nav.media_option_links ul li.social.youtube a, .footer_bar ul.visible_links li.social.youtube a {
+  background: url(../img/youtube-header.png) no-repeat 0 0;
+  height: 45px;
+  width: 48px;
+  display: inline-block;
+  border:0px;
+}
+header nav.media_option_links ul li.social.twitter a, .footer_bar ul.visible_links li.social.twitter a {
+  background: url(../img/twitter-header.png) no-repeat 0 0;
+  height: 45px;
+  width: 48px;
+  display: inline-block;
+  border:0px;
+}
+header nav.media_option_links ul li.social.rss a, .footer_bar ul.visible_links li.social.rss a {
+  background: url(../img/rss-header.png) no-repeat 0 0;
+  height: 45px;
+  width: 48px;
+  display: inline-block;
+  border:0px;
+}
+
+/* --------------- LEFTHAND NAV (TERTIARY) (all amendments by TW (Nov-Dec 2013) --------------- */
+
+nav.tertiary {
+                margin: 1em 0 .5em 1.5em;
+                padding: 0;
+                font-family: Arial, Helvetica, Verdana, Sans-serif;
+                font-weight: normal;
+                font-size: .9em;
+                clear: bottom;
+}
+nav.tertiary ul {
+}
+nav.tertiary ul li {
+                list-style-type: none;
+                margin: 0;
+}
+nav.tertiary ul li a { /* 1st level */
+                padding: 1em;
+                margin: 0;
+                display: inline-block;
+                width: 100%;
+                background-color: #823063;
+                background-image: url(../img/down-arrow-small-white.png);
+                background-repeat: no-repeat;
+                background-position: 97% 50%;
+                color: #ffffff;
+}
+nav.tertiary ul li a.open {
+                background-image: url(../img/up-nav.png);
+}
+nav.tertiary ul li ul li a { /* 2nd level */
+                background-color: #9B5982;
+                color: #ffffff;
+                background-image: url(../img/down-arrow-small-white.png);
+}
+nav.tertiary ul li ul li ul li a { /* 3rd level */
+                background-color: #B483A1;
+                color: #000000;
+                background-image: url(../img/down-nav.png);
+}
+nav.tertiary ul li ul li ul li ul li a { /* 4th level */
+                background-color: #CDACC1;
+                background-image: url(../img/down-nav.png);
+                color: #000000;
+}
+nav.tertiary ul li ul li ul li ul li ul li a { /* 5th level */
+                background-color: #E6D6E0;
+                background-image: url(../img/down-nav.png);
+                color: #000000;
+}
+nav.tertiary ul li ul li ul li ul li ul li ul li a { /* 6th level */
+                background-color: #F2EAEF;
+                background-image: url(../img/down-nav.png);
+                color: #000000;
+}
+nav.tertiary ul li ul li ul li ul li ul li ul li ul li a { /* 7th level */
+                background-color: #ffffff;
+                background-image: url(../img/down-nav.png);
+                color: #000000;
+}
+nav.tertiary .active {
+                font-weight: bold;
+}
+nav.tertiary ul.subpages a {
+                padding-left: 2em;
+                background-image: url(../img/down-nav-small.png);
+}
+
+/* MAIN CONTENT --------- (regular pages) (TW Dec 2013) ------------- */
+
+.main {
+	font-family: Arial,Helvetica,sans-serif;
+	float: right;
+/*	border: 1px dotted #ff0000; */
+}
+.maincontent {
+	float: left;
+	padding: .5em;
+/*	border: 1px dotted #0000ff; */
+}
+.tocitem {
+	margin: 1em .5em;
+	color: #ffffff;
+	background-color: #823063;
+	overflow: hidden;
+}
+.tocitem img {
+	margin: 0;
+}
+.tocitem img.imgleft {
+	padding: 0 1em 0 0;
+	float: left;
+}
+.tocitem img.imgright {
+	padding: 0 0 0 1em;
+	float: right;
+}
+.tocitem img.imgtop{
+	padding: 0 0 1em 0;
+}
+.tocitem h3 {
+	margin-bottom: 1em;
+	font-weight: bold;
+	padding: 1em 1em 0 1em;
+}
+.tocitem p {
+	font-size: 85%;
+	padding: 0 1em 1em 1em;
+}
+
+/* main5.css slider */
+/* ------------------------------------------------------------------ */
+/* =Slider */
+/* ------------------------------------------------------------------ */
+#slider {
+  background: #68003f;
+}
+#slider h2 a {
+	color: #FFF;
+}
+#slider ul {
+  margin: 0%;
+  padding: 0%;
+}
+#slider ul .slide {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: auto;
+}
+#slider ul .slide img {
+  display: block;
+  background: inherit; /* was #68003f - TW (30/01/2013) */
+  position: relative;
+  z-index: 103; /* cno2 - changed to put behind site actions menu */
+}
+#slider ul .slide h2 {
+  position: absolute;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  line-height: 1;
+  z-index: 1000;
+  top: 36.065573770492%;
+  left: 0;
+  margin-left: 3.125%;
+  width: 56.047197640118%;
+}
+#slider ul .slide p {
+  display: none;
+  position: absolute;
+  color: #ffffff;
+  line-height: 1.3;
+  z-index: 1000;
+}
+#slider ul .slide.four h2 {
+  top: 43.44262295082%;
+}
+#slider .flex-control-nav,
+#slider .flex-direction-nav {
+  display: none;
+}
+.wf-active #slider ul .slide h2 {
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  font-weight: normal;
+}
+.flexslider {
+  margin: 0%;
+  padding: 0%;
+}
+.flexslider .slide {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .slides {
+  display: block;
+}
+* html .slides {
+  height: 1%;
+}
+.flexslider {
+  background: #fff;
+  position: relative;
+  zoom: 1;
+  z-index: 100; /* cno2 - changed to put behind site actions menu */
+  clear: both;
+}
+.flexslider ul, .flexslider ol { /* Added by TW (25/01/2013) */
+margin-bottom: 0;
+}
+.flex-viewport {
+  max-height: 2000px;
+  position: relative;
+  z-index: 101; /* cno2 - changed to put behind site actions menu */
+}
+.loading .flex-viewport {
+  max-height: 370px;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flex-direction-nav {
+  position: absolute;
+  z-index: 102; /* cno2 - changed to put behind site actions menu */
+}
+.slide {
+  margin: 0%;
+  float: left;
+  position: relative;
+  z-index: 102; /* cno2 - changed to put behind site actions menu */
+}
+.flex-direction-nav {
+  right: 0;
+  top: -46px;
+  display: block;
+  margin-right: 3.125%;
+  z-index: 102;  /* cno2 - changed to put behind site actions menu */
+}
+.flex-direction-nav li {
+  display: inline;
+}
+.flex-direction-nav a {
+  width: 22px;
+  height: 32px;
+  display: block;
+/*  text-indent: -1000em; Commented out by TW (28/01/2013) */
+  float: left;
+  position: absolute;
+  margin: 0 0 -7px -7px;
+}
+#slider .flex-direction-nav a img {
+  color: #FFF; /* Added by TW (28/01/2013) */
+  position: absolute; /* was "relative" - fixed alignment of av */
+  text-align: center;
+  vertical-align: middle;
+  left: 24px;
+  top: 22px;
+  /* border: 1px solid #F00; */
+}
+.flex-direction-nav a:hover,
+.flex-direction-nav a:focus {
+  opacity: 0.8;
+}
+.flex-direction-nav .flex-prev {
+  background: transparent url(/style%20library/images/template/mobile/low-res/left-arrow-small.png) no-repeat 50% 50%;
+  margin-right: 3.125%;
+  right: 20px;
+}
+.flex-direction-nav .flex-next {
+  background: transparent url(/style%20library/images/template/mobile/low-res/right-arrow-small.png) no-repeat 50% 50%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .flex-direction-nav .flex-prev {
+	background-image: transparent url(/style%20library/images/template/mobile/high-res/left-arrow-small.png);
+	background-size: 11px 15px;
+  }
+  .flex-direction-nav .flex-next {
+	background-image: transparent url(/style%20library/images/template/mobile/high-res/right-arrow-small.png);
+	background-size: 11px 15px;
+  }
+}
+.flex-pauseplay {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  z-index: 102; /* cno2 - changed to put behind site actions menu */
+  padding-left: 3.125%;
+  padding-bottom: 3.125%;
+}
+.flex-pauseplay a {
+  width: 25px;
+  height: 25px;
+  display: block;
+  text-indent: -1000em;
+  cursor: pointer;
+  color: #FFF;
+}
+.flex-pauseplay a.flex-pause {
+  background: url(/style%20library/images/template/desktop/pause.png) no-repeat 50% 50%;
+}
+.flex-pauseplay a.flex-play {
+  background: url(/style%20library/images/template/desktop/play.png) no-repeat 50% 50%;
+}
+
+/* grid990 slider */
+/* ------------------------------------------------------------------ */
+/* =Slider */
+/* ------------------------------------------------------------------ */
+.wf-active #slider ul .slide h2 {
+  font-family: 'DIN Next W01 Bold', Arial, Helvetica, Verdana, Sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+}
+#slider {
+  width: 100%;
+  height: 236px;
+  background: #000; /* #68003f; pink */
+}
+#slider .slides {
+  margin: 0px;
+  padding: 0px;
+  height: 236px;
+  background: #000; /* #68003f; pink */
+}
+#slider .slides li {
+  margin: 0px;
+  padding: 0px;
+  width: 960px;
+  height: auto;
+  position: relative;
+  width: 960px !important;
+}
+#slider .slides li img {
+  display: block;
+  width: auto;
+  height: 236px;
+  float: right;
+  position: relative;
+  right: 0; /* was 70px - Commented out by TW (30/01/2013) */
+}
+#slider .slides li h2 {
+  font-size: 42px;
+  width: 450px; /* 51.520833333333% */
+  top: 25px;
+  left: 90px;
+  margin: 0px;
+}
+#slider .slides li p {
+  font-size: 1.2em;
+  top: 120px;
+  width: 450px; /* 51.520833333333% */
+  left: 90px;
+  display: block;
+}
+#slider .slides li.four h2 {
+  top: 60px;
+}
+#slider .slides li.four p {
+  top: 105px;
+}
+#slider .flex-control-nav,
+#slider .flex-direction-nav,
+#slider .flex-pauseplay {
+  display: block;
+}
+#slider .flex-direction-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#slider .flex-direction-nav li a {
+  background: rgba(0, 0, 0, 0.35);
+  width: 60px;
+  height: 60px;
+  display: block;
+/*  text-indent: -1000em; commented out by TW (28/01/2013) */
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 500;
+}
+#slider .flex-direction-nav li a:hover,
+#slider .flex-direction-nav li a:focus,
+#slider .flex-direction-nav li a:active {
+  background-color: #000 !important;
+}
+#slider .flex-direction-nav li a.flex-prev {
+/*  background: rgba(0, 0, 0, 0.35) url(/style%20library/images/template/desktop/left-arrow-small-white.png) no-repeat 50% 50%; */
+  left: 15px;
+}
+#slider .flex-direction-nav li a.flex-next {
+/*  background: rgba(0, 0, 0, 0.35) url(/style%20library/images/template/desktop/right-arrow-small-white.png) no-repeat 50% 50%; */
+  right: 0;
+}
+.flex-viewport {
+  width: 960px;
+  clear: both;
+}
+.flex-direction-nav {
+  right: 10px;
+  top: -67px;
+  margin-right: 10px;
+}
+.flex-direction-nav li {
+  display: inline;
+}
+.flex-direction-nav a {
+  display: block;
+/*  text-indent: -1000em; Commented out by TW (28/01/2013) */
+  float: left;
+  margin: 0 0 -7px -7px;
+}
+.flex-direction-nav a:hover,
+.flex-direction-nav a:focus,
+.flex-direction-nav a:active {
+  opacity: 0.8;
+  background-color: #fff !important;
+}
+.flex-direction-nav .flex-prev {
+  background: url(/style%20library/images/template/desktop/left-arrow-small.png) no-repeat 60% 60%;
+  margin-right: 20px;
+  right: 0;
+}
+.flex-direction-nav .flex-next {
+  background: url(/style%20library/images/template/desktop/right-arrow-small.png) no-repeat 60% 60%;
+}
+.flex-control-nav {
+  position: absolute;
+  bottom: 20px;
+  right: 145px; /* was "left" - this worked */
+  z-index: 500;
+}
+.flex-control-nav li {
+  display: inline;
+}
+.flex-control-nav li a { /* Modified by TW (29/01/2013) */
+  background: #AAA; /* was #d3bbd5 */
+  border: 1px solid #000;
+  display: block;
+  text-indent: -1000em;
+  float: left;
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
+}
+.flex-control-nav li a:hover,
+.flex-control-nav li a:focus {
+  background: #ffffff;
+}
+.flex-control-nav li a.flex-active {
+  background: #ffffff;
+}
+.flex-pauseplay {
+  position: absolute;
+  bottom: 22px;
+  left: 840px; /* was "left: 610px" */
+  z-index: 500;
+  padding: 0px;
+/*   border: 2px dotted #F00; debugging */
+}
+.flex-pauseplay a {
+  display: block;
+/*  text-indent: -1000em; removed by TW (30/01/2013) */
+  cursor: pointer;
+  margin: 0 15px 0 0;
+}
+.flex-pauseplay a.flex-pause {
+  background: url(/style%20library/images/template/desktop/pause.png) no-repeat 50% 50%;
+}
+.flex-pauseplay a.flex-play {
+  background: url(/style%20library/images/template/desktop/play.png) no-repeat 50% 50%;
+}
+.primary .flex-direction-nav {
+  top: -47px;
+}
+/* ------------------------------------------------------------------ */
