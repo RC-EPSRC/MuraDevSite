@@ -50,17 +50,17 @@ version 2 without this exception.  You may, if you choose, apply this exception 
 	<cfscript>
 		//this.jslib="jquery";
 		//this.navOffSet=0;
-		//this.navDepthLimit=1000;
+		this.navDepthLimit=1000;
 		//this.navParentIdx=2;
 		//this.navGrandParentIdx=3;
-		//this.navDepthAjust=0;
+		this.navDepthAjust=4;
 		//this.navSelfIdx=1;
 		//this.jsLibLoaded=false;
 		//this.longDateFormat="long";
 		//this.shortDateFormat="short";
-		//this.showMetaList="jpg,jpeg,png,gif";
-		//this.showInlineEditor=true;
-		//this.imageInList="jpg,jpeg,png,gif";
+		this.showMetaList="jpg,jpeg,png,gif";
+		this.showInlineEditor=false;
+		this.imageInList="jpg,jpeg,png,gif";
 		//this.directImages=true;
 		//this.personalization="user";
 		//this.showAdminToolBar=true;
@@ -74,7 +74,7 @@ version 2 without this exception.  You may, if you choose, apply this exception 
 		//this.subHead3="h4";
 		//this.subHead4="h5";
 		//this.subHead5="h6";
-		//this.navWrapperClass="sidebar-nav well";
+		this.navWrapperClass="sidebar-nav well";
 		//this.liHasKidsClass="";
 		//this.liHasKidsCustomString="";
 		//this.liCurrentClass="current";

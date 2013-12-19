@@ -45,18 +45,37 @@ modified version; it is your choice whether to do so, or to make such modified v
 version 2 without this exception.  You may, if you choose, apply this exception to your own modified versions of Mura CMS.
 --->
 
-<!--- This outputs peer nav and the sub nav of the page you are on if there is any. It omits top level nav for the sake of redundancy and dead-ends if there is no content below the page you are on. Usually works best when used in conjunction with the breadcrumb nav since it changes as you get deeper into a site. --->
+<!--- This outputs peer nav and the sub nav of the page you are on if there is any. 
+        It omits top level nav for the sake of redundancy and dead-ends if there is no 
+		content below the page you are on. Usually works best when used in conjunction with 
+		the breadcrumb nav since it changes as you get deeper into a site. --->
 <cfoutput>
-#dspNestedNav(
-	contentID=variables.$.getTopVar("contentID"),
-	viewDepth=4,
-	currDepth=1,
-	aCurrentClass="active",
-	aHasKidsClass="more",
-	sortBy=variables.$.getTopVar("sortBy"),
-	sortDirection=variables.$.getTopVar("sortDirection"),
-	subNavExpression="listFindNoCase('Page,Calendar',rsSection.type) and listFind(variables.$.content('path'),rsSection.contentID) and arguments.currDepth lt arguments.viewDepth"
-)#
+	<nav id="navMultilevel"<cfif this.navWrapperClass neq ""> class="#this.navWrapperClass#"</cfif> data-id="multinav-themelevel">
+		#dspNestedNav(
+			contentID=variables.$.getTopVar("contentID"),
+			viewDepth=4,
+			currDepth=1,
+			aCurrentClass="active",
+			aHasKidsClass="more",
+			sortBy=variables.$.getTopVar("sortBy"),
+			sortDirection=variables.$.getTopVar("sortDirection"),
+			subNavExpression="listFindNoCase('Page,Calendar,File',rsSection.type) and 
+			                  listFind(variables.$.content('path'),rsSection.contentID) and 
+			                  arguments.currDepth lt arguments.viewDepth"
+		)#
+		<!--- FROM Site-Level.... 
+		#dspNestedNav(
+		    contentID=variables.$.getTopVar("contentID"),
+		    viewDepth=4,
+		    currDepth=1,
+		    sortBy=variables.$.getTopVar("sortBy"),
+		    sortDirection=variables.$.getTopVar("sortDirection"),
+		    subNavExpression="listFindNoCase('Page,Calendar',rsSection.type) and 
+		    listFind(variables.$.content('path'),rsSection.contentID) and 
+			arguments.currDepth lt arguments.viewDepth"
+		)#
+		 --->
+	</nav>
 </cfoutput>
 <!---
 <cfargument name="contentid" type="string" >
