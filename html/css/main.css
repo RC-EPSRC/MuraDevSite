@@ -696,6 +696,15 @@ nav.tertiary ul.subpages a {
 	background-color: #823063;
 	overflow: hidden;
 }
+.tocitem div.tocitemcontainer {
+	margin: 0;
+	padding: 0;
+}
+.narrowblock {
+	max-width: 220px;
+	float: left;
+	position: relative;
+}
 .tocitem img {
 	margin: 0;
 }
