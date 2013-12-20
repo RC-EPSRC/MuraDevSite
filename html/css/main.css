@@ -701,9 +701,8 @@ nav.tertiary ul.subpages a {
 	padding: 0;
 }
 .narrowblock {
-	max-width: 220px;
+/*	max-width: 220px; */
 	float: left;
-	position: relative;
 }
 .tocitem img {
 	margin: 0;
