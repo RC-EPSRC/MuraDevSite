@@ -699,6 +699,7 @@ nav.tertiary ul.subpages a {
 .tocitem div.tocitemcontainer {
 	margin: 0;
 	padding: 0;
+	clear: both;
 }
 .narrowblock {
 /*	max-width: 220px; */
